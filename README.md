@@ -50,7 +50,7 @@ Open with VS Code(Optional)
 
 | Courses | Languages     | Prerequisites |
 | :-------- | :------- | :------------------------- |
-| **[Introduction to Computer Systems](https://github.com/itsrifathridoy/uiucse221/tree/Rifat's-Code/ICS)** | `C/C++` | None |
+| **[Introduction to Computer Systems](https://itsrifathridoy.github.io/uiucse221/ICS/)** | `C/C++` | None |
 
 
 
