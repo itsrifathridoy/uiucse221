@@ -6,9 +6,9 @@
 
 | Problems | Topic      |
 | :-------- | :-------  |
-| [01. Intro ](https://github.com/itsrifathridoy/uiucse221/tree/Rifat's-Code/ICS/Practice%201) | `varriable, data types, printf, scanf` | 
-| [02. Operators](https://github.com/itsrifathridoy/uiucse221/tree/Rifat's-Code/ICS/Practice%201) | `Operators` | 
-| [03. Condition ](https://github.com/itsrifathridoy/uiucse221/tree/Rifat's-Code/ICS/Practice%201) | `if, else if, else, switch` | 
+| [01. Intro ](https://itsrifathridoy.github.io/uiucse221/ICS/Practice%201/01.%20Intro/) | `varriable, data types, printf, scanf` | 
+| [02. Operators](https://itsrifathridoy.github.io/uiucse221/ICS/Practice%201/01.%20Operator/) | `Operators` | 
+| [03. Condition ](https://itsrifathridoy.github.io/uiucse221/ICS/Practice%201/01.%2Conditions/) | `if, else if, else, switch` | 
 
 
 
