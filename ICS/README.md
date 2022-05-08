@@ -6,7 +6,7 @@
 
 | Problems | Topic      |
 | :-------- | :-------  |
-| [Problem Set 1](https://github.com/itsrifathridoy/uiucse221/tree/Rifat's-Code/ICS/Practice%201) | `varriable, data types, printf, scanf, operators, condition` | 
+| [Problem Set 1](https://itsrifathridoy.github.io/uiucse221/ICS/Practice%201/) | `varriable, data types, printf, scanf, operators, condition` | 
 
 
 
