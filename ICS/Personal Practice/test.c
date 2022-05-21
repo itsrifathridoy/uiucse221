@@ -1,12 +1,12 @@
 #include<stdio.h>
 int main()
+{
+
+    for(i=1; ; i++)
     {
-       char op;
-       int a,b;
-
-       scanf("%d %c %d",&a,&op,&b);
-
-       printf("%d %c %d",a, op, b);
-
-
+        printf("pera is going on");
+        printf( "chill is going on");
     }
+
+    return 0;
+}
