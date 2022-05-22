@@ -1,10 +1,11 @@
 #include<stdio.h>
-#include<math.h>
 int main()
 {
-    double x,y,r;
-    scanf("%lf %lf",&x,&y);
-    r = fmod(x,y);
-    printf("Reminder: %lf",r);
+    int r;
+    float pi=3.1416,area;
+    scanf("%d",&r);
+    area=2*pi*r;
+    printf("your ans: %f",area);
     return 0;
+
 }
