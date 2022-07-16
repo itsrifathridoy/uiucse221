@@ -5,8 +5,8 @@ int main()
     scanf("%d",&N);
     for(int i=1;i<=N;i++)
     {
-        printf("%d ",i);
-        i++;
+        temp=2*i-1;
+        printf("%d ",temp);
 
     }
 }

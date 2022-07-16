@@ -5,7 +5,9 @@ int n;
 printf("Enter the number=");
 scanf("%d", &n);
 
-    if(n==0){
+    if(n>=0)
+    {
+        if(n==0){
         printf("NO");
     }
     else if(n==1){
@@ -32,6 +34,11 @@ scanf("%d", &n);
     else{
             printf("NO");
         }
+    }
+    else
+    {
+        printf("INVALID");
+    }
 
 return 0;
 }
