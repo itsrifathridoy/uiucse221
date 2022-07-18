@@ -4,7 +4,7 @@ int main() {
     int n,sum=0;
     scanf("%d",&n);
    int mynumbers[n];
-   int max,min;
+   int max,min,indexMax,indexMin;
 
   for(int i=0;i<n;i++)
   {
@@ -12,16 +12,24 @@ int main() {
 
   }
   max = mynumbers[0];
+  min = mynumbers[0];
   for(int i=1;i<n;i++)
   {
       if(max<mynumbers[i])
       {
           max = mynumbers[i];
+          indexMax=i;
+      }
+      if(min>mynumbers[i])
+      {
+          min = mynumbers[i];
+          indexMin=i;
       }
 
   }
 
-  printf("%d",max);
+  printf("Max=%d, Index=%d\n",max,indexMax);
+  printf("Min=%d, Index=%d",min,indexMin);
 
 
 

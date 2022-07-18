@@ -1,8 +1,8 @@
 #include <stdio.h>
+
 /*
 Add `int max_of_four(int a, int b, int c, int d)` here.
 */
-
 int max(int a,int b){
             if(a>b){
                 return a;
@@ -18,6 +18,7 @@ int max(int a,int b){
        int max_4 = max(max_1st_2,max_2nd_2);
        return max_4;
     }
+
 
 int main() {
     int a, b, c, d;
