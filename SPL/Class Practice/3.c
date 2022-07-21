@@ -6,8 +6,15 @@ int main()
     {
         for(j=1;j<=count;j++)
         {
-            printf("%d ",i);
-            i=i+5;
+           if(i>100)
+           {
+               break;
+           }
+           else
+           {
+                printf("%d ",i);
+                i=i+5;
+           }
         }
         count++;
     }

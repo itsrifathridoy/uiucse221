@@ -2,7 +2,7 @@
 int main()
 {
     int count=1;
-    for(int i=0;i<=100;i+5)
+    for(int i=0;i<=100;i=i+5)
     {
         if(count%3==0)
         {
