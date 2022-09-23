@@ -97,7 +97,7 @@ int main()
     {
         printf("\n\nNo Data Found for ID %d\n\n",searchId);
     }
-    printf("-----Lowest employee's Salary----\n");
+    printf("-----Lowest Salary's Employee Info----\n");
     printEmployeesInfo(EmployeInfo,lowestSalary(EmployeInfo,n));
     printf("\nEnter Number to Search: ");
     scanf("%d",&searchPhoneNo);
@@ -118,7 +118,7 @@ int main()
     {
         printf("\n\nNo Data Found for Phone Number %d\n\n",searchPhoneNo);
     }
-    printf("-----Highest employee's Salary----\n");
+    printf("-----Highest Salary's Employee Info----\n");
     printEmployeesInfo(EmployeInfo,HighestSalary(EmployeInfo,n));
 
     return 0;

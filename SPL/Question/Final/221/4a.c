@@ -9,15 +9,15 @@ int main(void)
     }
     else
     {
-        int arr[50],size=0;
+        int x,count=0;
         float sum=0;
         for(int i=0;!feof(file);i++)
         {
-            fscanf(file,"%d",&arr[i]);
-            sum+=arr[i];
-            size++;
+            fscanf(file,"%d",&x);
+            sum+=x;
+            count++;
         }
-        printf("%.2f",sum/size);
+        printf("%.2f",sum/count);
 
         fclose(file);
     }
