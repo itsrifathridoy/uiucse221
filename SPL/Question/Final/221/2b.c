@@ -8,6 +8,7 @@ int main()
      //str1 = HelloMa
      strncpy(str2, "Federick", 3);
      //str2=Fedjour
+
      i=strlen(str1); // i=7
      for(k=0; str2[k] !='\0'; k++)
         str1[i+k] = str2[k];
