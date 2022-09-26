@@ -47,9 +47,6 @@ int main()
     }
     print(st,output);
 
-
-
-
     return 0;
 }
 
