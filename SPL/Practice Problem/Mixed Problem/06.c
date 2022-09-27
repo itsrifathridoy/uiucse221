@@ -6,13 +6,13 @@ struct product
     float price;
     char category;
 };
-
+struct product *products;
 
 int main()
 {
     int n;
     scanf("%d",&n);
-    struct product products[n];
+    products = (struct product*)malloc(n*sizeof(struct product));
     for(int i=0;i<n;i++)
     {
         printf("ID: ");
