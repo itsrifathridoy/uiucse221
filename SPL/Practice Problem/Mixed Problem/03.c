@@ -13,20 +13,20 @@ int main()
     scanf("%[^\n]s",str);
     int len=0;
         for (int i=0;str[i]!='\0';i++)
-            {
+        {
                 len++;
-            }
-            for(int i=0;i<len;i++)
+        }
+        for(int i=0;i<len;i++)
+        {
+            for(int j=i+1;j<len;j++)
             {
-                for(int j=i+1;j<len;j++)
+                if (str[i]==str[j])
                 {
-                    if (str[i]==str[j])
-                    {
-                        delPosition(str,len,j);
-                        i--;
-                        len--;
-                    }
+                    delPosition(str,len,j);
+                    i--;
+                    len--;
                 }
+            }
 
             }
 
