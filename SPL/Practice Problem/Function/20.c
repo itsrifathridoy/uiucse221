@@ -20,7 +20,7 @@ int isPrime(int n)
         x++;
     }
 }
-void GeneratePrime(int n)
+void GenNthPrime(int n)
 {
     for(int i=1;i<n;i++)
     {
