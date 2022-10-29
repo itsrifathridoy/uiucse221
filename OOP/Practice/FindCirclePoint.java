@@ -44,6 +44,7 @@ public class FindCirclePoint {
         Point p2 = new Point(sc.nextInt(),sc.nextInt());
 
         System.out.println("Point in the circle: "+ c.isInside(p2));
+        System.out.println(c.center.x);
 
         sc.close();
     }
