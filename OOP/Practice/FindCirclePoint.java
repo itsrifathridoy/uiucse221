@@ -33,18 +33,23 @@ class Circle{
 public class FindCirclePoint {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter Circle Center Point: ");
-        Point center = new Point(sc.nextInt(),sc.nextInt());
-
-        System.out.print("Enter Circle Radius: ");
-        Circle c = new Circle(center,sc.nextInt());
-        
-        System.out.print("Enter A Point: ");
-        Point p2 = new Point(sc.nextInt(),sc.nextInt());
-
-        System.out.println("Point in the circle: "+ c.isInside(p2));
-        System.out.println(c.center.x);
+        int t;
+        t = sc.nextInt();
+        while(t!=0)
+        {
+            Point center = new Point(sc.nextInt(),sc.nextInt());
+            Circle c = new Circle(center,sc.nextInt());
+            Point p = new Point(sc.nextInt(),sc.nextInt());
+            if(c.isInside(p))
+            {
+                System.out.println("The point is inside the circle");
+            }
+            else
+            {
+                System.out.println("The point is not inside the circle");
+            }
+            t--;
+        }
 
         sc.close();
     }
