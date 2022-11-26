@@ -10,21 +10,39 @@ import java.util.Map;
 class DriveFile {
 
     private String url;
+    private String api;
 
-    protected DriveFile(String url) {
-        this.url = url;
+    protected DriveFile(String url,String api) {
+        if(url.contains("https://drive.google.com/file/"))
+        {
+            this.url = url;
+        }
+        else if(url.contains("https://drive.google.com/"))
+        {
+            System.out.println("Invalid Drive URL");
+            System.exit(0);
+        }else if(!url.contains("drive.google.com"))
+        {
+            System.out.println("Not a Drive URL");
+            System.exit(0);
+        }
+        else
+        {
+            this.url = url;
+        }
+        this.api = api;
     }
 
     protected String generateDownloadLink() {
         String url = this.url;
-        String demoUrl = "https://www.googleapis.com/drive/v3/files/url/?key=AIzaSyDU2PawLFT5hAeP1Xzq7dSLiLqSEwMC2Xg&alt=media";
+        String demoUrl = "https://www.googleapis.com/drive/v3/files/url/?key="+api+"&alt=media";
         String fileId = url.split("/")[5];
         return demoUrl.replace("url", fileId);
 
     }
 
-    public static String generateDownloadLink(String url) {
-        String demoUrl = "https://www.googleapis.com/drive/v3/files/url/?key=AIzaSyDU2PawLFT5hAeP1Xzq7dSLiLqSEwMC2Xg&alt=media";
+    public static String generateDownloadLink(String url,String api) {
+        String demoUrl = "https://www.googleapis.com/drive/v3/files/url/?key="+api+"&alt=media";
         String fileId = url.split("/")[5];
         return demoUrl.replace("url", fileId);
 
@@ -32,7 +50,7 @@ class DriveFile {
 
     private String generateDetailsLink() {
         String url = this.url;
-        String demoUrl = "https://www.googleapis.com/drive/v3/files/url/?key=AIzaSyDU2PawLFT5hAeP1Xzq7dSLiLqSEwMC2Xg";
+        String demoUrl = "https://www.googleapis.com/drive/v3/files/url/?key="+this.api;
         String fileId = url.split("/")[5];
         return demoUrl.replace("url", fileId);
 
