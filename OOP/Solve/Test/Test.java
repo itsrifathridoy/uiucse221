@@ -10,7 +10,7 @@ public class Test {
     public static void main(String[] args){
         final int x;
         x=5;
-        SmartPhone s = new Samsung_S21();
+//        SmartPhone s = new Samsung_S21();
 
     }
 }

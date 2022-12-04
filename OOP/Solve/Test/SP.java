@@ -1,15 +1,12 @@
 package Test;
 
-public abstract   class SP {
+public class SP{
 
-    protected SP() {
+    public void print() {
+
     }
 
-
-    abstract void camera();
-    abstract void touch();
-    void print()
-    {
+    public void xyz() {
 
     }
 
