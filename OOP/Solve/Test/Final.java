@@ -1,9 +1,10 @@
 package Test;
 
-public final class Final{
-    void print()
-    {
-        System.out.println("Hello");
+public class Final extends abs{
+    Final(int x, int y) {
+        super(x, y);
     }
+
+    super.print();
 
 }
