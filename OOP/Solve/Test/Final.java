@@ -5,6 +5,4 @@ public class Final extends abs{
         super(x, y);
     }
 
-    super.print();
-
 }
