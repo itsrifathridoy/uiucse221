@@ -1,19 +1,17 @@
 package InnerClass;
 class My{
-    final int x;
+    static final int x;
     static
     {
-        System.out.println("Block 1");
+        x=6;
     }
 
-    My(int x) {
-        this.x = x;
-    }
+
 
 
     static void print()
     {
-        System.out.println("Hello");
+        System.out.println(x);
     }
 }
 
