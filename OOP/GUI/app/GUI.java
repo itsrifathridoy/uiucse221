@@ -12,8 +12,8 @@ public class GUI implements ActionListener {
     JLabel jl = new JLabel();
     GUI()
     {
-
-        jf.setSize(1000,1000);
+        jf.setTitle("Hello");
+        jf.setSize(500,500);
         jf.setLocation(100,100);
 
         j1.setBounds(50,50,100,50);
@@ -23,6 +23,7 @@ public class GUI implements ActionListener {
 
         jb.setText("Button");
         jb.addActionListener(this);
+
 
         jl.setBounds(50,400,100,50);
         jf.add(jl);
@@ -37,14 +38,18 @@ public class GUI implements ActionListener {
 
     public void actionPerformed(ActionEvent e)
     {
-        if(j1.getText().equals("abc") && j2.getText().equals("def"))
+        if(j1.getText().trim().equals("") && j2.getText().trim().equals(""))
         {
-
-            jl.setText("Successful");
+            ImageIcon icon = new ImageIcon("D:\\uiucse221\\OOP\\GUI\\img2.png");
+            JOptionPane.showMessageDialog(jf,"Please Input","Alert",JOptionPane.PLAIN_MESSAGE,icon);
+        }
+        else if(j1.getText().equals("abc") && j2.getText().equals("def"))
+        {
+            JOptionPane.showMessageDialog(jf,"Successful");
         }
         else
         {
-            jl.setText("failed");
+            JOptionPane.showMessageDialog(jf,"Failed");
         }
     }
 }
