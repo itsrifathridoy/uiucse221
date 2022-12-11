@@ -17,7 +17,7 @@ public class GUI implements ActionListener {
         fr.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         ImageIcon icon = new ImageIcon("D:\\uiucse221\\OOP\\GUI\\app\\img2.png");
         fr.setIconImage(icon.getImage());
-
+        fr.setResizable(false);
 
 
 

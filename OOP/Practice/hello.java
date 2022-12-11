@@ -1,6 +1,7 @@
-public class hello{
+public class hello extends Object{
+
     public static void main(String[] arg)
     {
-        System.out.println("Hello World");
+
     }
 }

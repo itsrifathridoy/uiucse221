@@ -1,13 +1,10 @@
-package suptiAunty;
+package StudentPanel;
 
 public class Main {
     public static void main(String[] args) {
-        new GUI();
 
+        UI ui = new UI();
 
 
     }
 }
-
-
-
