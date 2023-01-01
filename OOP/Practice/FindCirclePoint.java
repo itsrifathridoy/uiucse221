@@ -1,12 +1,34 @@
 import java.util.Scanner;
 
-class Point{
+class Point implements Comparable<Point>{
     int x;
     int y;
     public Point(int x,int y)
     {
         this.x = x;
         this.y =y;
+    }
+
+    @Override
+    public int compareTo(Point p) {
+        if(p.x<this.x)
+            return 1;
+        else if(p.x>this.x)
+        {
+            return -1;
+        }
+        else {
+            if(p.y<this.y)
+            {
+                return 1;
+            }
+            else if(p.y>this.y) {
+                return -1;
+            }
+            else {
+                return 0;
+            }
+        }
     }
 }
 class Circle{

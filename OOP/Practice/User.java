@@ -1,4 +1,4 @@
-public class User implements Comparable<User>{
+public class User{
     int id;
     String name;
     String email;
@@ -8,19 +8,5 @@ public class User implements Comparable<User>{
         this.email = email;
     }
 
-    @Override
-    public int compareTo(User o) {
-        if(o.id<this.id)
-        {
-            return 1;
-        }
-        else if(o.id>this.id)
-        {
-            return -1;
-        }
-        else
-        {
-            return 0;
-        }
-    }
+
 }
