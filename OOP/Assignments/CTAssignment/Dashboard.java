@@ -37,13 +37,17 @@ public class Dashboard {
         fr.add(btn2);
         btn1.addActionListener(e->{
             fr.setVisible(false);
-            new CashOut();
+            try {
+                new RechargeORCashOut(e.getActionCommand());
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
         });
         btn2.addActionListener(e->{
             fr.setVisible(false);
             System.out.println(e.getActionCommand());
             try {
-                new Recharge(e.getActionCommand());
+                new RechargeORCashOut(e.getActionCommand());
             } catch (FileNotFoundException ex) {
                 throw new RuntimeException(ex);
             } catch (IOException ex) {
