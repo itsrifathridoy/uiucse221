@@ -8,7 +8,7 @@ class m{
         }
         catch (Exception e)
         {
-            e.getMessage()
+            e.getMessage();
         }
         finally {
 

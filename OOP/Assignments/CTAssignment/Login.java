@@ -51,8 +51,9 @@ public class Login {
                 String[] phonePass = x.split(" ");
                 if(phonePass[0].equals(phone) && phonePass[1].equals(pass))
                 {
+
                     fr.setVisible(false);
-                    new Dashboard(phonePass[1],phonePass[0],phonePass[3]);
+                    new Dashboard(phonePass[2],phonePass[0],phonePass[3]);
                     fr = null;
                     isLogin = true;
                     break;
