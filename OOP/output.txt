@@ -1,1 +1,3 @@
-Write with FileOutput Stream.
+Line1:223
+Line2:100
+Line3:300

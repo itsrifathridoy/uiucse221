@@ -2,7 +2,6 @@ package CTAssignment;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class Dashboard {
@@ -48,8 +47,6 @@ public class Dashboard {
             System.out.println(e.getActionCommand());
             try {
                 new RechargeORCashOut(e.getActionCommand());
-            } catch (FileNotFoundException ex) {
-                throw new RuntimeException(ex);
             } catch (IOException ex) {
                 throw new RuntimeException(ex);
             }

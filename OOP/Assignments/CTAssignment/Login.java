@@ -1,12 +1,14 @@
 package CTAssignment;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Login {
+public class Login implements ActionListener {
     JFrame fr;
     JLabel label1;
     JLabel label2;
@@ -74,6 +76,8 @@ public class Login {
 
     }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
 
-
+    }
 }

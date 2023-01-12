@@ -56,6 +56,7 @@ public class Login {
         });
         login.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         login.setBounds(100,100,500,500);
+
         login.setLayout(null);
         login.setVisible(true);
     }

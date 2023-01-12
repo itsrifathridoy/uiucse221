@@ -17,8 +17,6 @@ public class Reg {
     Reg()
     {
         reg = new JFrame("Reg");
-
-
         name = new JLabel("Name: ");
         nameText = new JTextField(50);
         email = new JLabel("Email");

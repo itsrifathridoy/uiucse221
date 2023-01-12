@@ -52,8 +52,10 @@ public class RechargeORCashOut {
                 String[] phonePass = usersArray.get(i).split(" ");
                 if (phonePass[0].equals(phone) && phonePass[1].equals(pass) && ch.isSelected()) {
                     if (event.equals("Recharge")) {
-                        int currentBalance = Integer.parseInt(phonePass[3].trim());
-                        String temp = usersArray.get(i).replace(Integer.toString(currentBalance), Integer.toString(currentBalance += amount));
+                      int currentBalance = Integer.parseInt(phonePass[3].trim());
+//                        String temp = usersArray.get(i).replace(Integer.toString(currentBalance), Integer.toString(currentBalance += amount));
+
+                        String temp = phone + " " + pass + " " + phonePass[2] + " " + currentBalance+amount;
                         usersArray.set(i, temp);
                         try {
                             FileWriter changeBalance = new FileWriter("Assignments/CTAssignment/user.txt");
@@ -67,7 +69,7 @@ public class RechargeORCashOut {
                         }
                         re.setVisible(false);
 
-                        new Dashboard(phonePass[2], phonePass[0], Integer.toString(currentBalance));
+                        new Dashboard(phonePass[2], phonePass[0], currentBalance+amount+"");
                         re = null;
                         isDone = true;
                         break;
@@ -91,7 +93,7 @@ public class RechargeORCashOut {
                             re.setVisible(false);
 
                             new Dashboard(phonePass[2], phonePass[0], Integer.toString(currentBalance));
-                            re = null;
+                                     re = null;
                             isDone = true;
                             break;
                         }
